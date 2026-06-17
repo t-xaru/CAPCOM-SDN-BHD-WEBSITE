@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPCOM Team</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fb;
+      color: #1e293b;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0f172a;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* ACTIVE PAGE */
+    nav ul li a.active {
+      color: #38bdf8;
+    }
+
+    nav ul li a.active::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #38bdf8;
+      box-shadow: 0 0 8px #38bdf8;
+    }
+
+    /* SECTION */
+    section {
+      padding: 120px 20px 80px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .title h2 {
+      font-size: 40px;
+      color: #0f172a;
+    }
+
+    /* TEAM GRID */
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 1200px;
+        margin: 60px auto 0;
+        padding: 0 20px;
+    }
+
+    /* TEAM CARD */
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-top: 20px;
+
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* HOVER EFFECT (GLow + Zoom) */
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow:
+        0 10px 30px rgba(56, 189, 248, 0.35),
+        0 0 20px rgba(56, 189, 248, 0.2);
+    }
+
+    /* IMAGE */
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .role {
+      color: #475569;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .duties {
+      text-align: left;
+      font-size: 14px;
+      color: #334155;
+      padding-left: 18px;
+    }
+
+    .duties li {
+      margin-bottom: 6px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    .hero {
+  height: 60vh;
+  background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+  url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+footer{text-align:center;background:#0f172a;color:#fff;padding:20px;margin-top: 60px;}
+
+ .logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img{
+  height: 45px;
+  width: auto;
+}
+
+.logo h1{
+  font-size: 22px;
+  color: white;
+  margin: 0;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+     <div class="logo">
+        <img src="images/logo.jpeg" alt="CAPCOM Logo">
+        <h1>CAPCOM</h1>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- TEAM SECTION -->
+  <section class="hero">
+  <div class="hero-content">
+    <h2>Meet the Engineers</h2>
+    <p>People behind CAPCOM automation systems</p>
+  </div>
+</section>
+
+    <div class="team-grid">
+
+      <!-- CEO -->
+      <div class="card">
+        <img src="images/haris.jpeg" alt="CEO">
+        <h3>Muhammad Aqmar Haris</h3>
+        <p class="role">CEO</p>
+        <ul class="duties">
+          <li>Leads company direction</li>
+          <li>Approves major decisions</li>
+          <li>Manages overall operations</li>
+        </ul>
+      </div>
+
+      <!-- PROJECT MANAGER -->
+      <div class="card">
+        <img src="images/hadif.jpeg" alt="Project Manager">
+        <h3>Wan Hadiff Najwan</h3>
+        <p class="role">Project Manager</p>
+        <ul class="duties">
+          <li>Plans project timeline</li>
+          <li>Coordinates team tasks</li>
+          <li>Ensures project completion</li>
+        </ul>
+      </div>
+
+      <!-- DOCUMENTATION -->
+      <div class="card">
+        <img src="images/fatima.jpeg" alt="Documentation">
+        <h3>Talmiz Fatima Zahra</h3>
+        <p class="role">Secretary</p>
+        <ul class="duties">
+          <li>Prepares reports</li>
+          <li>Manages progress documentation </li>
+          <li>Developed company website</li>
+        </ul>
+      </div>
+
+      <!-- MECHANICAL -->
+      <div class="card">
+        <img src="images/syazwan.jpeg" alt="Mechanical">
+        <h3>Mohd Syazwan Daniel</h3>
+        <p class="role">IoT Engineer</p>
+        <ul class="duties">
+          <li>Develops IoT monitoring system using Node-RED</li>
+          <li>Integrates PLC with real-time dashboard</li>
+          <li>Enables remote system monitoring</li>
+        </ul>
+      </div>
+
+      <!-- ELECTRICAL -->
+      <div class="card">
+        <img src="images/aizral.jpeg" alt="Electrical">
+        <h3>Mohammad Aizral Izma</h3>
+        <p class="role">Electrical Engineer</p>
+        <ul class="duties">
+          <li>Designs wiring systems</li>
+          <li>Handles PLC connections</li>
+          <li>Ensures electrical safety</li>
+        </ul>
+      </div>
+
+      <!-- AUTOMATION -->
+      <div class="card">
+        <img src="images/haziq.jpeg" alt="Automation">
+        <h3>Ahmad Haziq</h3>
+        <p class="role">Mechanical Engineer</p>
+        <ul class="duties">
+          <li>Designs mechanical systems</li>
+          <li>Handles assembly structure</li>
+          <li>Supports fabrication work</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Active page highlight
+    const links = document.querySelectorAll("nav ul li a");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+  <footer>
+    <p>© 2026 CAPCOM SDN BHD | Smart Automation Solutions</p>
+  </footer>
+</body>
+</html>
