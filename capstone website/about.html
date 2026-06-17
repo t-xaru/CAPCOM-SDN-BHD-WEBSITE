@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - CAPCOM SDN BHD</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fb;
+      color: #1e293b;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0f172a;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* ACTIVE PAGE */
+    nav ul li a.active {
+      color: #38bdf8;
+    }
+
+    nav ul li a.active::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #38bdf8;
+      box-shadow: 0 0 8px #38bdf8;
+    }
+
+    /* SECTION */
+    section {
+      padding: 30px 8%;
+    }
+
+    .hero {
+  height: 60vh;
+  background:
+  linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
+  url('https://img.freepik.com/premium-photo/glowing-amber-bottles-production-line-pharmaceutical-facility_1123377-1088.jpg');
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+    .card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  margin-top: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+}
+    footer{text-align:center;background:#0f172a;color:#fff;padding:20px;}
+
+     .logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img{
+  height: 45px;
+  width: auto;
+}
+
+.logo h1{
+  font-size: 22px;
+  color: white;
+  margin: 0;
+}
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">
+        <img src="images/logo.jpeg" alt="CAPCOM Logo">
+        <h1>CAPCOM</h1>
+    </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>About CAPCOM SDN BHD</h1>
+    <p>Smart Automation & Industrial Engineering Solutions</p>
+  </div>
+</section>
+
+<section>
+  <h2>Company Background</h2>
+
+  <div class="card">
+   <p> CAPCOM SDN BHD is a premier local engineering firm strategically headquartered in the 
+    industrial hub of Bandar Baru Bangi, Selangor, specializing in the delivery of advanced 
+    automated diagnostic and maintenance solutions. Our core expertise lies in bridging the 
+    gap between complex industrial requirements and practical, high-performance execution, 
+    ensuring that sophisticated technology remains accessible and effective for local 
+    manufacturers. By integrating smart maintenance systems and real-time data acquisition 
+    technologies, we empower our clients to maximize equipment uptime, streamline 
+    operational efficiency, and maintain a competitive edge in the rapidly evolving 
+    pharmaceutical and manufacturing sectors. </p>
+    <br>
+   <p> Our expertise includes PLC programming, mechanical integration, robotics systems, and
+    real-time monitoring using Node-RED dashboards for industrial applications.Dedicated to the advancement of local industry, CAPCOM SDN BHD operates with a 
+    mission to provide affordable yet cutting-edge automated solutions that directly reduce 
+    equipment breakdowns and optimize system performance. Our vision is to be recognized 
+    as a trusted engineering partner that supports Malaysian industries through the 
+    implementation of smart diagnostic technologies and sustainable asset management 
+    practices. With a highly skilled technical team experienced in PLC programming, robotic 
+    integration, and IoT dashboard development using Node-RED, we are uniquely 
+    positioned to deliver the labelling and boxing station for ATH Sdn Bhd with the highest 
+    standards of safety and technical integrity. </p>
+   </br>
+
+  </div>
+</section>
+
+<section>
+  <h2>Mission & Vision</h2>
+
+  <div class="card">
+    <b>Mission:</b> <p>Our mission is to deliver practical, cost-effective, and reliable automation and diagnostic solutions for industrial machinery and production systems. We focus on improving operational efficiency by reducing machine downtime, enhancing maintenance processes, and integrating smart technologies such as PLC control and real-time monitoring systems.</p>
+  </div>
+
+  <div class="card">
+    <b>Vision:</b> <p>Our vision is to become a trusted and recognized local engineering company specializing in smart industrial automation, maintenance, and diagnostic technologies. We aim to support modern manufacturing industries by developing innovative, scalable, and intelligent systems that improve productivity, safety, and long-term operational sustainability.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 CAPCOM SDN BHD | Smart Automation Solutions</p>
+</footer>
+
+</body>
+</html>

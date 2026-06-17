@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project - CAPCOM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav h1 {
+  color: white;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* ACTIVE PAGE */
+nav ul li a.active {
+  color: #38bdf8;
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 60vh;
+  background:
+  linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
+  url('https://thumbs.dreamstime.com/b/pharmaceutical-production-line-technicians-factory-close-up-amber-medicine-bottles-conveyor-belt-blurred-332361419.jpg');
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title h2 {
+  font-size: 40px;
+  color: #0f172a;
+}
+
+/* PROJECT GRID */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-stack {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.25);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.card p {
+  color: #334155;
+  font-size: 15px;
+}
+
+.card ul {
+  margin-left: 18px;
+  margin-top: 10px;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #0f172a;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+ .logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img{
+  height: 45px;
+  width: auto;
+}
+
+.logo h1{
+  font-size: 22px;
+  color: white;
+  margin: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+   <div class="logo">
+        <img src="images/logo.jpeg" alt="CAPCOM Logo">
+        <h1>CAPCOM</h1>
+    </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="project.html" class="active">Project</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>Our Project</h2>
+    <p>Labelling & Boxing Automation System</p>
+  </div>
+</section>
+
+<!-- PROJECT CONTENT -->
+<section>
+
+  <div class="title">
+    <h2>Project Overview</h2>
+  </div>
+
+ <div class="project-stack">
+
+  <div class="card">
+    <h3>Problem Statement</h3>
+    <p>The current pharmaceutical packaging line at ATH Sdn Bhd faces a critical operational 
+gap between the existing feeding and capping stages and the final distribution phase, as 
+there is currently no automated system for labelling and boxing. This lack of integration 
+results in production inefficiencies and bottlenecks that prevent the modular system from 
+reaching its full output potential. Furthermore, the absence of real-time data acquisition 
+capabilities hinders the ability to perform remote monitoring and predictive diagnostics, 
+increasing the risk of unexpected equipment breakdowns. Operational safety is also a 
+concern, as the line requires a standardized emergency stop system and high-visibility 
+status indicators specifically a tri-color tower light to comply with ISO 13850:2015 
+standards and ensure personnel safety during impending danger.</p>
+  </div>
+
+  <div class="card">
+    <h3>Solution</h3>
+    <p>
+    The proposed solution is the development of an automated Labelling and Boxing Station 
+    that integrates seamlessly with the existing tablet feeding and capping systems at ATH Sdn Bhd. 
+    The system is designed using PLC-based control architecture to ensure precise coordination 
+    of conveyor movement, labelling application, and boxing operations within a continuous production flow.
+    </p>
+
+  <br>
+
+  <p>
+    To enhance operational efficiency and reduce downtime, the system incorporates real-time monitoring 
+    using Node-RED, enabling remote supervision, data acquisition, and predictive maintenance capabilities. 
+    This allows operators to detect abnormalities early and improve overall system reliability.
+  </p>
+
+  <br>
+
+  <p>
+    In addition, safety is reinforced through the implementation of an ISO 13850:2015-compliant emergency stop system 
+    and a tri-color tower light indicator (Red, Yellow, Green) to provide clear visual status feedback during operation. 
+    The overall design ensures a modular, scalable, and industry-ready automation system suitable for pharmaceutical production environments.
+  </p>
+</div>
+
+  <div class="card">
+  <h3>Project Objectives</h3>
+
+  <ul>
+    <li>To design and develop an automated Labelling and Boxing Station integrated with the existing tablet feeding and capping production line.</li>
+
+    <li>To implement PLC-based control for accurate coordination of conveyor movement, labelling, and boxing processes.</li>
+
+    <li>To enable real-time monitoring and data acquisition using Node-RED for improved system visibility and remote diagnostics.</li>
+
+    <li>To ensure system safety by implementing an ISO 13850:2015-compliant emergency stop system and tri-color tower light indicators.</li>
+
+    <li>To develop complete engineering documentation including PLC ladder diagrams, pneumatic schematics, and mechanical layouts for system implementation.</li>
+
+    <li>To establish a structured 10-year asset management plan to support long-term system maintenance and sustainability.</li>
+  </ul>
+</div>
+
+  <div class="card">
+  <h3>System Features</h3>
+
+  <ul>
+    <li>PLC-based automation system for coordinated control of labelling, boxing, and conveyor operations.</li>
+
+    <li>Integrated Labelling and Boxing Station designed to work seamlessly with existing tablet feeding and capping systems.</li>
+
+    <li>Real-time monitoring and data acquisition using Node-RED dashboard for system performance tracking and diagnostics.</li>
+
+    <li>Industrial safety system including ISO 13850:2015-compliant emergency stop and tri-color tower light (Red, Yellow, Green).</li>
+
+    <li>Pneumatic actuator system for precise mechanical movement and packaging operations.</li>
+
+    <li>Modular system design allowing scalability, maintenance, and future expansion of production line.</li>
+  </ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 CAPCOM SDN BHD | Smart Automation Solutions</p>
+</footer>
+
+</body>
+</html>
